@@ -67,6 +67,7 @@
 
         this.stop = true;
         clearInterval(interval);
+        //Remove attempt text
         const attemptNode = document.querySelector('#attempt');
         while (attemptNode.firstChild) {
           attemptNode.removeChild(attemptNode.firstChild);
@@ -89,7 +90,7 @@
         this.wpm = 0;
         this.startTime = Date.now() / 1000;
         this.busPos = 0;
-        this.correct = 1;
+        this.correct = 0;
         this.errors = 0;
         this.armed = false;
         this.detonated = false;
@@ -124,7 +125,7 @@
               this.endGame();
             }
           }, 50);
-        }, 1000);
+        }, 2500);
 
       },
   
@@ -248,7 +249,7 @@ $title-color: #e80404;
   .scene {
     position: relative;
     height: 350px;
-    width: 1200px;
+    max-width: 1200px;
     overflow: hidden;
     background: url('../assets/landscape.png') repeat 0 0;
     animation: travel 8s linear infinite;
