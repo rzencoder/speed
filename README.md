@@ -2,6 +2,10 @@
 
 > Typing game based on the movie 'Speed'. Built using Vue, Vue-Cli and Sass.
 
+## Demo
+
+https://rzencoder.github.io/speed/
+
 ## Instructions
 
 Choose a target word per minute speed and start typing. The bomb will activate once you go 5 wpm above your target to allow a little breathing space. If your wpm falls below the target or you never reach the target the bomb will explode. Type all of the text to defuse the bomb.
